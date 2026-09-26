@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad Trazos de Alegría</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #F7F1EA;
+    --surface: #FFFDF9;
+    --ink: #33291F;
+    --ink-soft: #79695A;
+    --line: #E4D9C8;
+    --accent: #C9551F;
+    --accent-soft: #FBEADF;
+    --display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #1B1713;
+      --surface: #241F1A;
+      --ink: #F1E8DB;
+      --ink-soft: #B2A493;
+      --line: #3A3229;
+      --accent: #F08653;
+      --accent-soft: #33241B;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #1B1713;
+    --surface: #241F1A;
+    --ink: #F1E8DB;
+    --ink-soft: #B2A493;
+    --line: #3A3229;
+    --accent: #F08653;
+    --accent-soft: #33241B;
+  }
+
+  body {
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 0 64px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 64ch; margin: 0 auto; }
+
+  /* La tira de colores es la paleta «Fiesta» de la app, tal cual. */
+  .crayones { display: flex; gap: 6px; padding-block: 28px 20px; }
+  .crayones span { width: 26px; height: 8px; border-radius: 4px; }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.15;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  h2 {
+    font-family: var(--display);
+    font-size: 1.3rem;
+    margin: 40px 0 6px;
+    text-wrap: balance;
+  }
+  .fecha {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+  p { margin: 0 0 14px; }
+  .resumen {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 26px 0 8px;
+  }
+  .resumen strong { font-family: var(--display); }
+  .correo {
+    display: inline-block;
+    background: var(--accent-soft);
+    border-radius: 8px;
+    padding: 3px 9px;
+    font-weight: 600;
+    user-select: all;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 56px 0 8px;
+  }
+  .idioma {
+    font-family: var(--display);
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 4px;
+  }
+  footer {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--line);
+    margin-top: 56px;
+    padding-top: 16px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="crayones" aria-hidden="true">
+    <span style="background:#E63946"></span>
+    <span style="background:#F77F00"></span>
+    <span style="background:#FFD23F"></span>
+    <span style="background:#A7C957"></span>
+    <span style="background:#48CAE4"></span>
+    <span style="background:#9B5DE5"></span>
+  </div>
+
+  <p class="idioma">Español</p>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Trazos de Alegría · actualizada el 23 de septiembre de 2026</p>
+
+  <div class="resumen">
+    <strong>En una línea:</strong> Trazos de Alegría no recoge ningún dato personal.
+    No hay cuentas, ni registro, ni anuncios, ni analítica, ni servidores nuestros.
+    Todo lo que dibuja tu hijo se queda en su dispositivo.
+  </div>
+
+  <h2>Qué datos recogemos</h2>
+  <p>Ninguno. La app no pide nombre, ni correo, ni edad, ni ubicación, y no incluye
+  ningún servicio de terceros que recoja información: no hay anuncios, ni analítica,
+  ni redes sociales.</p>
+
+  <h2>Dónde se guardan los dibujos</h2>
+  <p>Los dibujos, el progreso y las fichas se guardan en el propio dispositivo. Si
+  tienes iCloud activado, las fichas y los libros desbloqueados se sincronizan entre
+  tus dispositivos a través de tu cuenta de iCloud, que es tuya: nosotros no vemos ni
+  podemos acceder a ese contenido.</p>
+
+  <h2>Compras</h2>
+  <p>Las compras se hacen con el sistema de la App Store. Apple gestiona el pago y
+  nosotros no recibimos ni vemos datos de tarjeta ni de facturación. Antes de cualquier
+  compra la app pide resolver una multiplicación, para asegurarse de que hay un adulto
+  delante.</p>
+
+  <h2>Fotos</h2>
+  <p>La app pide permiso para guardar en el carrete sólo cuando pulsas «Guardar en
+  Fotos». No lee tus fotos ni accede a la galería.</p>
+
+  <h2>Enlaces a otras páginas</h2>
+  <p>Desde la ficha de cada libro se puede ir a Amazon o a Etsy para comprar la edición
+  impresa o la digital. Esas salidas están detrás del control parental y, una vez
+  fuera, se aplica la política de privacidad de cada una de esas páginas.</p>
+
+  <h2>Niños</h2>
+  <p>La app está pensada para niños de 5 a 8 años. No recoge datos personales de nadie,
+  tampoco de menores, y no muestra publicidad ni contenido de terceros. Cumple con la
+  normativa infantil de la App Store y con COPPA por no recoger información alguna.</p>
+
+  <h2>Cambios</h2>
+  <p>Si algún día cambiamos algo, lo verás en esta misma página con una fecha nueva.</p>
+
+  <h2>Contacto</h2>
+  <p>Escríbenos a <span class="correo">dayron.ciarapena@gmail.com</span></p>
+
+  <hr>
+
+  <p class="idioma">English</p>
+  <h1>Privacy Policy</h1>
+  <p class="fecha">Trazos de Alegría · updated 23 September 2026</p>
+
+  <div class="resumen">
+    <strong>In one line:</strong> Trazos de Alegría collects no personal data. There
+    are no accounts, no sign-up, no ads, no analytics and no servers of ours.
+    Everything your child draws stays on their device.
+  </div>
+
+  <h2>What we collect</h2>
+  <p>Nothing. The app never asks for a name, email, age or location, and it includes no
+  third-party service that collects information — no ads, no analytics, no social
+  networks.</p>
+
+  <h2>Where drawings are stored</h2>
+  <p>Drawings, progress and tokens are stored on the device itself. If you have iCloud
+  enabled, tokens and unlocked books sync between your own devices through your iCloud
+  account, which belongs to you: we cannot see or access that content.</p>
+
+  <h2>Purchases</h2>
+  <p>Purchases use Apple's App Store system. Apple handles payment; we never receive or
+  see card or billing details. Before any purchase the app asks you to solve a
+  multiplication, to make sure an adult is present.</p>
+
+  <h2>Photos</h2>
+  <p>The app asks for permission to save to your photo library only when you tap “Save
+  to Photos”. It never reads your photos or browses your library.</p>
+
+  <h2>Links to other sites</h2>
+  <p>Each book page can link to Amazon or Etsy to buy the printed or digital edition.
+  Those links sit behind the parental gate, and once you leave, each site's own privacy
+  policy applies.</p>
+
+  <h2>Children</h2>
+  <p>The app is made for children aged 5 to 8. It collects no personal data from anyone,
+  children included, and shows no advertising or third-party content. It complies with
+  the App Store's Kids Category rules and with COPPA by collecting no information at
+  all.</p>
+
+  <h2>Changes</h2>
+  <p>If anything ever changes, you will see it on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Write to <span class="correo">dayron.ciarapena@gmail.com</span></p>
+
+  <footer>© 2026 Dayron Peña Ciara · Trazos de Alegría</footer>
+</main>
+</body>
+</html>

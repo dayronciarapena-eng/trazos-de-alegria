@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte Trazos de Alegría</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #F7F1EA;
+    --surface: #FFFDF9;
+    --ink: #33291F;
+    --ink-soft: #79695A;
+    --line: #E4D9C8;
+    --accent: #C9551F;
+    --accent-soft: #FBEADF;
+    --display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #1B1713;
+      --surface: #241F1A;
+      --ink: #F1E8DB;
+      --ink-soft: #B2A493;
+      --line: #3A3229;
+      --accent: #F08653;
+      --accent-soft: #33241B;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #1B1713;
+    --surface: #241F1A;
+    --ink: #F1E8DB;
+    --ink-soft: #B2A493;
+    --line: #3A3229;
+    --accent: #F08653;
+    --accent-soft: #33241B;
+  }
+
+  body {
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 0 64px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 64ch; margin: 0 auto; }
+
+  /* Los colores de la paleta «Fiesta» que trae la app. */
+  .crayones { display: flex; gap: 6px; padding-block: 28px 20px; }
+  .crayones span { width: 26px; height: 8px; border-radius: 4px; }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(2.1rem, 7vw, 2.8rem);
+    line-height: 1.12;
+    margin: 0 0 4px;
+    text-wrap: balance;
+  }
+  h2 {
+    font-family: var(--display);
+    font-size: 1.3rem;
+    margin: 44px 0 10px;
+    text-wrap: balance;
+  }
+  .lema { color: var(--ink-soft); margin: 0 0 4px; font-size: 1.05rem; }
+  p { margin: 0 0 14px; }
+
+  .tarjeta {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 26px 0 0;
+  }
+  .tarjeta strong { font-family: var(--display); }
+  .correo {
+    display: inline-block;
+    background: var(--accent-soft);
+    border-radius: 8px;
+    padding: 3px 9px;
+    font-weight: 600;
+    user-select: all;
+  }
+
+  details {
+    border-bottom: 1px solid var(--line);
+    padding: 12px 0;
+  }
+  details summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.02rem;
+    list-style-position: outside;
+  }
+  details summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  details p { margin: 10px 0 2px; color: var(--ink-soft); }
+
+  .idioma {
+    font-family: var(--display);
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 4px;
+  }
+  hr { border: none; border-top: 1px solid var(--line); margin: 56px 0 8px; }
+  footer {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--line);
+    margin-top: 56px;
+    padding-top: 16px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="crayones" aria-hidden="true">
+    <span style="background:#E63946"></span>
+    <span style="background:#F77F00"></span>
+    <span style="background:#FFD23F"></span>
+    <span style="background:#A7C957"></span>
+    <span style="background:#48CAE4"></span>
+    <span style="background:#9B5DE5"></span>
+  </div>
+
+  <p class="idioma">Español</p>
+  <h1>Trazos de Alegría</h1>
+  <p class="lema">Libros de colorear y dibujo libre para niños, en el iPhone y el iPad.</p>
+
+  <div class="tarjeta">
+    <strong>¿Necesitas ayuda?</strong>
+    <p style="margin:6px 0 0">Escríbenos a <span class="correo">dayron.ciarapena@gmail.com</span>
+    y te respondemos. Cuéntanos qué dispositivo usas y qué pasó; si puedes, adjunta una captura.</p>
+  </div>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <details>
+    <summary>He cambiado de dispositivo. ¿Pierdo lo que compré?</summary>
+    <p>No. En Ajustes, toca «Restaurar compras»: las fichas y los libros vuelven con tu
+    mismo ID de Apple. Si usas iCloud, se sincronizan solos.</p>
+  </details>
+
+  <details>
+    <summary>¿Qué son las fichas?</summary>
+    <p>Una ficha abre una lámina, la que tú elijas. Cada libro trae tres láminas gratis
+    para probar, y también puedes comprar el libro entero.</p>
+  </details>
+
+  <details>
+    <summary>¿Puede mi hijo comprar sin querer?</summary>
+    <p>No. Antes de cualquier compra —y antes de salir de la app a otra web— hay que
+    resolver una multiplicación que a esa edad no se hace de memoria. No se puede desactivar.</p>
+  </details>
+
+  <details>
+    <summary>¿Funciona sin internet?</summary>
+    <p>Sí. Todo el contenido viene dentro de la app. Sólo hace falta conexión para
+    comprar o para abrir los enlaces a las tiendas.</p>
+  </details>
+
+  <details>
+    <summary>¿Está en inglés?</summary>
+    <p>Sí. En Ajustes puedes cambiar entre español e inglés; los libros tienen sus
+    títulos y versículos en los dos idiomas.</p>
+  </details>
+
+  <details>
+    <summary>¿Dónde se guardan los dibujos?</summary>
+    <p>En el propio dispositivo. Puedes guardarlos también en tu carrete desde el menú
+    «···» del editor. No hay servidores ni cuentas.</p>
+  </details>
+
+  <h2>Privacidad</h2>
+  <p>No recogemos ningún dato. Puedes leer la
+  <a href="privacidad.html">política de privacidad completa</a>.</p>
+
+  <h2>Los libros en papel</h2>
+  <p>Los cuatro libros existen también impresos y en PDF para imprimir en casa: están en
+  Amazon y en nuestra tienda de Etsy,
+  <a href="https://www.etsy.com/shop/DayRox">DayRox</a>.</p>
+
+  <hr>
+
+  <p class="idioma">English</p>
+  <h1>Support</h1>
+  <p class="lema">Coloring books and free drawing for kids, on iPhone and iPad.</p>
+
+  <div class="tarjeta">
+    <strong>Need help?</strong>
+    <p style="margin:6px 0 0">Email <span class="correo">dayron.ciarapena@gmail.com</span>.
+    Tell us which device you use and what happened; a screenshot always helps.</p>
+  </div>
+
+  <details>
+    <summary>I changed devices. Did I lose my purchases?</summary>
+    <p>No. In Settings, tap “Restore purchases”: tokens and books come back with the same
+    Apple ID. With iCloud on, they sync by themselves.</p>
+  </details>
+
+  <details>
+    <summary>What are tokens?</summary>
+    <p>One token unlocks one page, whichever you like. Every book includes three free
+    pages, and you can also buy the whole book.</p>
+  </details>
+
+  <details>
+    <summary>Can my child buy something by accident?</summary>
+    <p>No. Before any purchase — and before leaving the app for another website — you must
+    solve a multiplication that a small child cannot do from memory. It cannot be turned off.</p>
+  </details>
+
+  <details>
+    <summary>Does it work offline?</summary>
+    <p>Yes. All content ships inside the app. You only need a connection to buy or to open
+    the store links.</p>
+  </details>
+
+  <p style="margin-top:20px">Privacy: we collect nothing. Read the
+  <a href="privacidad.html">full privacy policy</a>.</p>
+
+  <footer>© 2026 Dayron Peña Ciara · Trazos de Alegría</footer>
+</main>
+</body>
+</html>
